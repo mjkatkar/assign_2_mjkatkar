@@ -55,21 +55,21 @@
             <form id="myform" onsubmit="event.preventDefault();" autocomplete="off">
             <tr>
                 <th><label>Name:</label></th>
-                <th><input type="text" id="fname" name="fname" placeholder="First Name"></th>
-                <th><input type="text" id="lname" name="lname" placeholder="Last Name"></th>
+                <th><input type="text" id="fname" name="fname" placeholder="First Name" required></th>
+                <th><input type="text" id="lname" name="lname" placeholder="Last Name" required></th>
             </tr>
             <tr>
                 <th> <label>Mobile No: </label></th>
-                <th><input type="text" id="mono" name="mono" placeholder="starting with 0"></th>
+                <th><input type="text" id="mono" name="mono" placeholder="starting with 0" required></th>
             </tr>
             <tr>
                 <th><label>E-mail: </label></th>
-                <th><input type="email" id="email" name="email" placeholder="EX: myname@example.com"></th>
+                <th><input type="email" id="email" name="email" placeholder="EX: myname@example.com" required></th>
             </tr>
             <tr>
                 <th><label>Seating Options:</label></th>
-                <th><select name="seat" id="seat">
-			<option value=""disabled selected hidden>Chose Seat Type</option>
+                <th><select name="seat" id="seat" required>
+					<option value=""disabled selected hidden>Chose Seat Type</option>
                     <option value="front-Block">front-Block</option>
                     <option value="Middle-Block">Middle-Block</option>
                     <option value="Balcony-Block">Balcony-Block</option>
@@ -77,16 +77,16 @@
                 </th>
             
                 <th><lable>No. of Tickets:</lable></th>
-                <th><input type="number" id="tick" name="tick" min="1" max="5" placeholder="MAX-5" width="50%"></th>
+                <th><input type="number" id="tick" name="tick" min="1" max="5" placeholder="MAX-5" width="50%" required></th>
             </tr>
             <tr>
                 <th><lable>Mode of payment:</lable></th>
                 <th>
-                    <input type="radio" id="pay" name="pay" value="UPI">
+                    <input type="radio" id="pay" name="pay" value="UPI" required>
                     <label for="upi">UPI</label><br>
-                    <input type="radio" id="pay" name="pay" value="CARD">
+                    <input type="radio" id="pay" name="pay" value="CARD" required>
                     <label for="CARDS">Credit/Debit Card:</label><br>
-                    <input type="radio" id="pay" name="pay" value="NETB">
+                    <input type="radio" id="pay" name="pay" value="NETB" required>
                     <label for="NETB">NET Banking:</label>
                 </th>
                 </tr>
@@ -104,7 +104,7 @@
                 
             <tr>
                 <th>
-                    <input type="checkbox" id="term" name="tems" value="condition"></th>
+                    <input type="checkbox" id="term" name="tems" value="condition" required></th>
                 <th> <label for="terms" size="100"> Agree All terms And Conditions</label><br></th>
             
             </tr>
