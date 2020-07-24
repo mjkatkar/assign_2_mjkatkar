@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title style="color: red">www.BookConcerts.in</title>
+    <meta charset="windows-1252">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#section1">Home</a></li> 
+            <li><a href="#section2">Register</a></li> 
+            <li><a href="#section3">show_registration</a></li>
+	
+        </ul>
+    </nav>
+    <div id="section1">
+    <h1>BookConcerts.in</h1>
+		<br>
+		<div clas="info">
+			<h2 id="sanam"> SANAM </h2>
+			<br><br>
+			
+			<p>
+				India's Leading Youtube Sensation To Perform Live Soon!<br> So Do Not wait...book your Tickets Now!!!<br><br>
+				Click On Register Tab above and Book yours Today!!<br><br><strong>Address: Mahalunge Stadium, Balewadi, Pune.<br> Dates: 24<sup>th</sup>, 25<sup>th</sup> and 26<sup>th</sup> July 2020</strong>
+			</p>
+			<br>
+	<div class="row">
+  		<div class="column">
+    		<img src="Sanam-1.jpg"  style="width:80%">
+  		</div>
+  		<div class="column">
+			<img src="Sanam-2.jpg" style="width:80%">
+		</div>
+		  <div class="column">
+    		<img src="sanam-3.jpg" style="width:80%">
+  		</div>
+		<div class="column">
+    		<img src="sanam-4.jpg" style="width:80%">
+  		</div>
+	</div>
+		
+</div>
+</div>
+    
+<div id="section2">
+    <h1>BookConcerts.in</h1>
+        <h2>Registration Form</h2>
+    <table id="mov1">
+    <tr>
+        <td>
+        <table class="mov" id="mov">
+            <form id="myform" onsubmit="event.preventDefault();" autocomplete="off">
+            <tr>
+                <th><label>Name:</label></th>
+                <th><input type="text" id="fname" name="fname" placeholder="First Name"></th>
+                <th><input type="text" id="lname" name="lname" placeholder="Last Name"></th>
+            </tr>
+            <tr>
+                <th> <label>Mobile No: </label></th>
+                <th><input type="text" id="mono" name="mono" placeholder="starting with 0"></th>
+            </tr>
+            <tr>
+                <th><label>E-mail: </label></th>
+                <th><input type="email" id="email" name="email" placeholder="EX: myname@example.com"></th>
+            </tr>
+            <tr>
+                <th><label>Seating Options:</label></th>
+                <th><select name="seat" id="seat">
+                    <option value="front-Block">front-Block</option>
+                    <option value="Middle-Block">Middle-Block</option>
+                    <option value="Balcony-Block">Balcony-Block</option>
+                    </select>
+                </th>
+            
+                <th><lable>No. of Tickets:</lable></th>
+                <th><input type="number" id="tick" name="tick" min="1" max="5" placeholder="MAX-5" width="50%"></th>
+            </tr>
+            <tr>
+                <th><lable>Mode of payment:</lable></th>
+                <th>
+                    <input type="radio" id="pay" name="pay" value="UPI">
+                    <label for="upi">UPI</label><br>
+                    <input type="radio" id="pay" name="pay" value="CARD">
+                    <label for="CARDS">Credit/Debit Card:</label><br>
+                    <input type="radio" id="pay" name="pay" value="NETB">
+                    <label for="NETB">NET Banking:</label>
+                </th>
+                </tr>
+                <tr>
+                <th><lable>Day and Date Slot:</lable></th>
+                <th>
+                    <input type="radio" id="day" name="day" value="FRI-24/07/2020">
+                    <label for="MON">FRI-24/07/2020</label><br>
+                    <input type="radio" id="day" name="day" value="SAT-25/07/2020">
+                    <label for="TUE">SAT-25/07/2020</label><br>
+                    <input type="radio" id="day" name="day" value="SUN-26/07/2020">
+                    <label for="SUN">SUN-26/07/2020</label>
+                </th>
+            </tr>
+                
+            <tr>
+                <th>
+                    <input type="checkbox" id="term" name="tems" value="condition"></th>
+                <th> <label for="terms" size="100"> Agree All terms And Conditions</label><br></th>
+            
+            </tr>
+            <tr>
+                <th><button onclick="addHtmlTableRow();"><a>SUBMIT</a></button></th>
+                <th><button onclick="resetForm();">RESET</button></th>
+            </tr>
+            </form>
+        </table>
+
+            
+        </td>
+        <td>
+            <img src="seatingPlan.jpg">
+             <h4 style="color: saddlebrown">Note: Refer This Image for Seating Options</h4>
+        </td>
+    </tr>
+    </table>
+</div>
+     <div id="section3">
+     <h1>BookConcerts.in</h1>
+    <h2> Successful Bookings</h2>
+         
+    <table id="table" class="sub" border="1">
+         <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Mobile No.</th>
+            <th>Email</th>
+            <th>Seating Opt.</th>
+            <th>No.of Tickets</th>
+            <th>Mode of Payment</th>
+            <th>day and Date</th >
+        </tr>
+
+    </table>
+    </div>
+    
+<script src="script.js">
+</script>
+
+</body>
+</html>
